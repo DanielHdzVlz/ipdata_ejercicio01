@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ipdata_ejercicio01</string>
+    <string name="textview">TextView</string>
 </resources>
