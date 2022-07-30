@@ -52,12 +52,12 @@
 
             <EditText
                 android:id="@+id/id_nombre"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:ems="10"
                 android:hint="Nombre:"
                 android:inputType="textPersonName"
+                android:minHeight="48dp"
                 android:text=""
                 android:textSize="18dp" />
         </LinearLayout>
@@ -71,7 +71,18 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"></LinearLayout>
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Telefono"
+                android:inputType="phone"
+                android:textSize="20dp" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/textView5"
@@ -82,7 +93,18 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"></LinearLayout>
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextTextEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Correo:"
+                android:inputType="textEmailAddress"
+                android:textSize="20dp" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/textView6"
@@ -95,21 +117,15 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/button"
+            <ImageButton
+                android:id="@+id/imageButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Button" />
-
+                app:srcCompat="@drawable/icono_aceptar"
+                android:onClick="leerDatos"
+                tools:ignore="SpeakableTextPresentCheck" />
         </LinearLayout>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
